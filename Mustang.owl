@@ -1,0 +1,797 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/pywq/ontologies/Mustang#"
+     xml:base="http://www.semanticweb.org/pywq/ontologies/Mustang"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#definition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#hasCategory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#hasCategory">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#isCategoryOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Exterior"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Stripes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#isCategoryOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#isCategoryOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Stripes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Exterior"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#isCompetitorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#isCompetitorOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Ford"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#ThirdParty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#isForSubmodel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#isForSubmodel">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Exhaust"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Mustang_Submodel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#isManufacturedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#isManufacturedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Ford_Performance_Off-Road_Steering_Wheel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Ford"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#American_Muscle_Graphics_Matte_Black_Lemans_Stripes_-_8_in. -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#American_Muscle_Graphics_Matte_Black_Lemans_Stripes_-_8_in.">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Stripes"/>
+        <definition>Shelby GT500 Styling
+Dual Matte Black 10&quot; Stripes
+4 Mil Wrapping Cast PVC Vinyl Material
+Built-In Protective Clear Coat Layer
+Up to 8 Years Outdoor Durability
+Air Release Technology for a Smooth, Wrinkle-Free Surface
+Includes (3) Pre-Cut Sections
+Fits All 2015-2019 Mustangs</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#American_Muscle_Graphics_Silver_Lemans_Stripes_-_8_in. -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#American_Muscle_Graphics_Silver_Lemans_Stripes_-_8_in.">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Stripes"/>
+        <definition>Classic Lemans Styling
+Dual Gloss Silver 8&quot; Stripes
+4 Mil Wrapping Cast PVC Vinyl Material
+Built-In Protective Clear Coat Layer
+Up to 8 Years Outdoor Durability
+Air Release Technology for a Smooth, Wrinkle-Free Surface
+Includes (3) Pre-Cut Sections
+Fits All 2015-2019 Mustangs</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#American_Muscle_Graphics_White_Lemans_Stripes_-_8_in. -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#American_Muscle_Graphics_White_Lemans_Stripes_-_8_in.">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Stripes"/>
+        <definition>Classic Lemans Styling
+Dual Gloss White 8&quot; Stripes
+4 Mil Wrapping Cast PVC Vinyl Material
+Built-In Protective Clear Coat Layer
+Up to 8 Years Outdoor Durability
+Air Release Technology for a Smooth, Wrinkle-Free Surface
+Includes (3) Pre-Cut Sections
+Fits All 2015-2019 Mustangs</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#AxlebackExhaust -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#AxlebackExhaust">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Exhaust"/>
+        <definition>the name “axle-back” comes from the fact that this system replaces the exhaust from the rear axle to the exhaust tips</definition>
+        <rdfs:seeAlso>https://www.cjponyparts.com/resources/catback-vs-axleback-exhaust#axleback</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Black_MMD_V-Series_Stripes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Black_MMD_V-Series_Stripes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Stripes"/>
+        <definition>MMD V Series Stripes
+Tapered to Accentuate the Lines of the Car
+Gloss Black Appearance
+4 Mil Wrapping Cast PVC Vinyl Material
+Built-In Protective Clear Coat Layer for Up to 8 Years Outdoor Durability
+Air Release Technology for a Smooth Wrinkle-Free Surface
+Pre-Cut for Ease of Installation
+Fits All 2015-2019 Mustangs</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Borla_ATAK_Axle-Back_Exhaust -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Borla_ATAK_Axle-Back_Exhaust">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#AxlebackExhaust"/>
+        <definition>Loud Aggressive Sound
+&quot;ATAK&quot; Race Inspired Mufflers Included
+2.25&quot; Mandrel-Bent Stainless Steel Tubing
+4&quot; Chromed Stainless Steel Tips w/ Embossed Borla Logo
+Cut &amp; Clamp Design
+Not Compatible with Active Exhaust
+Fits 2015-2019 EcoBoost Mustangs</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Borla_ATAK_Cat-Back_Exhaust -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Borla_ATAK_Cat-Back_Exhaust">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#CatbackExhaust"/>
+        <definition>Loud Aggressive Sound
+Y-Pipe and &quot;ATAK&quot; Race Inspired Mufflers Included
+2.25&quot; Mandrel-Bent Stainless Steel Tubing
+4&quot; Chromed Stainless Steel Tips w/ Embossed Borla Logo
+Direct Bolt-On Design
+Not Compatible with Active Exhaust
+Fits 2015-2019 EcoBoost Mustang Fastback</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Borla_Stinger_S-Type_Axle-Back_Exhaust -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Borla_Stinger_S-Type_Axle-Back_Exhaust">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#AxlebackExhaust"/>
+        <definition>Loud Throaty Exhaust Note without the Drone
+&quot;S-Type&quot; Stinger Mufflers Included
+2.25 in. Mandrel-Bent Stainless Steel Tubing
+4 in. Chromed Stainless Steel Tips
+Cut &amp; Clamp Design
+Not Compatible with Active Exhaust
+Fits 2015-2019 EcoBoost Mustang</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Borla_Touring_Cat-Back_Exhaust -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Borla_Touring_Cat-Back_Exhaust">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#CatbackExhaust"/>
+        <definition>Mellow Sleeper Sound
+Mid-Pipe Resonator and Touring &quot;Turbo&quot; Style Mufflers Included
+2.25&quot; Mandrel-Bent Stainless Steel Tubing
+4&quot; Chromed Stainless Steel Tips w/ Embossed Borla Logo
+Direct Bolt-On Design
+Not Compatible with Active Exhaust
+Fits 2015-2019 EcoBoost Mustang Fastback</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#CatbackExhaust -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#CatbackExhaust">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Exhaust"/>
+        <definition>an upgrade of the exhaust system from the catalytic converter(s) back</definition>
+        <rdfs:seeAlso>https://www.cjponyparts.com/resources/catback-vs-axleback-exhaust#axleback</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Corbeau_Sportline_RRS_Reclining_Seat_-_Black_Leather_-_Pair -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Corbeau_Sportline_RRS_Reclining_Seat_-_Black_Leather_-_Pair">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Seats"/>
+        <definition>Superior Appearance
+Black Front and Rear Floor Mats
+Embroidered Shelby GT Logo
+Polypropylene Yarn Construction
+Multi-Layer Traction Backing
+Officially Licensed by Ford
+Sold as a Set of Four
+Fits All 2015-2019 Mustangs</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Ecoboost -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Ecoboost">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Mustang_Submodel"/>
+        <definition>a newly developed 2.3 L EcoBoost 310 hp four-cylinder engine</definition>
+        <rdfs:seeAlso>https://en.wikipedia.org/wiki/Ford_Mustang#Sixth_generation_(2015%E2%80%93present)</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Exhaust -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Exhaust">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Parts"/>
+        <definition>deliver performance as well as aggressive exhaust tones</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Exterior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Exterior">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Parts"/>
+        <definition>the Exterior Styling of the Mustang</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#FloorMats -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#FloorMats">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Interior"/>
+        <definition>Mustang Floor Mats Products</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Flowmaster_American_Thunder_Axle-Back_Exhaust -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Flowmaster_American_Thunder_Axle-Back_Exhaust">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#AxlebackExhaust"/>
+        <definition>Aggressive Flowmaster Sound
+Durable 409 Stainless Steel Construction
+Mandrel-Bent Tubing
+Polished 304 Stainless Steel 4&quot; Tips
+Includes a pair of Flowmaster Super 10 Series Mufflers
+Not Compatible with Active Exhaust
+Fits All 2015-2019 EcoBoost Mustangs</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Flowmaster_FlowFX_Axle-Back_Exhaust -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Flowmaster_FlowFX_Axle-Back_Exhaust">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#AxlebackExhaust"/>
+        <definition>Effective FlowFX Axle-Back Exhaust
+Provides a Deep Exterior Sound
+Offers a Tame Interior Noise
+Impressive Performance Gains
+Powerful Straight-Through Mufflers
+Made with Bright 409S Stainless Steel
+4 Inch Polished Stainless Steel Tips
+Designed and Built in America
+Cut &amp; Clamp Installation
+Not Compatible with Active Exhaust
+Fits all 2015-2019 EcoBoost Mustang Models</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Flowmaster_Outlaw_Axle-Back_Exhaust -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Flowmaster_Outlaw_Axle-Back_Exhaust">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#AxlebackExhaust"/>
+        <definition>Super Aggressive Flowmaster Outlaw Sound
+Durable 409 Stainless Steel Construction
+2.5&quot; Mandrel-Bent Tubing
+4&quot; Polished Stainless Steel Tips
+Includes Two Flowmaster Outlaw Mufflers
+Not Compatible with Active Exhaust
+Fits 2015-2019 EcoBoost Mustangs</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Ford -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Ford">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Manufacturer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Ford_GT350_Alcantara_Steering_Wheel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Ford_GT350_Alcantara_Steering_Wheel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#SteeringWheels"/>
+        <definition>GT350 Alcantara Steering Wheel
+Aggressive Race-Inspired Styling
+Features a Unique Soft Alcantara Suede With a Leather Bottom
+12 O’clock Stripe
+Double Stitching Along its Diameter
+More Defined 10 and 2 O’clock Grips
+Pre-Installed Airbags &amp; Electronics Wiring
+Reuses Factory Airbag
+No Warranty
+Fits all 2015 to 2017 Ford Mustang Models</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Ford_Performance_Off-Road_Steering_Wheel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Ford_Performance_Off-Road_Steering_Wheel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#SteeringWheels"/>
+        <definition>Performance Off-Road Steering Wheel
+Made by Sparco for Ford Performance
+Features Ford Performance Logo
+Quick-Release Installation (Requires Additional Hardware)
+Alcantara Wrapped for Ergonomic Grip
+Fits 2005-2019 Ford Mustangs</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Ford_Performance_Recaro_Seats -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Ford_Performance_Recaro_Seats">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Seats"/>
+        <definition>Race-Inspired Recaro Seats with Integrated Head Rest
+Reinforced Bolstering At Shoulder, Back, and Thigh Areas
+High-Grade Breathable Leather
+Comes in Black
+Recline-able with Manual Adjustments
+With Pass-Through Openings for Harnesses
+Seat Brackets Included
+Sold As a Pair
+Will Not Fit Convertibles
+Fits 2018-2019 Ford Mustang Fastback Models</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#GT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#GT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Mustang_Submodel"/>
+        <definition>5.0 L Coyote 435 hp V8 engine</definition>
+        <rdfs:seeAlso>https://en.wikipedia.org/wiki/Ford_Mustang#Sixth_generation_(2015%E2%80%93present)</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Interior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Interior">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Parts"/>
+        <definition>Mustang interior styling parts</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#MOMO_USA_Race_Steering_Wheel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#MOMO_USA_Race_Steering_Wheel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#SteeringWheels"/>
+        <definition>Race Ready Style
+Improved Steering Feel
+Leather Wrapped
+Smaller Radius for Faster Inputs
+Fits All 1984-2019 Mustangs with Adapter</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Magnaflow_Street_Cat-Back_Exhaust -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Magnaflow_Street_Cat-Back_Exhaust">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#CatbackExhaust"/>
+        <definition>Classic Muscle Car Sound
+Street Series Muffler - Straight-Through Design
+Durable Stainless Steel Construction
+2.5&quot; Mandrel-Bent Tubing
+4.5&quot; Polished Stainless Tips
+Not Compatible with Active Exhaust
+Fits 2015-2019 EcoBoost Mustangs</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Manufacturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Manufacturer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Mustang"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Mustang -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Mustang">
+        <definition>an American car manufactured by Ford</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Mustang_Submodel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Mustang_Submodel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Mustang"/>
+        <definition>Two engine options are available: 2.3 L EcoBoost 310 hp four-cylinder and 5.0 L GT 435 hp V8.</definition>
+        <rdfs:seeAlso>https://en.wikipedia.org/wiki/Ford_Mustang#Sixth_generation_(2015%E2%80%93present)</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Parts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Parts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Mustang"/>
+        <rdfs:isDefinedBy>used to do personal modification of a car or car tuning</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Seats -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Seats">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Interior"/>
+        <definition>Mustang Seats &amp; Seat Covers</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#SteeringWheels -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#SteeringWheels">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Interior"/>
+        <definition>Mustang Steering Wheels</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Stripes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Stripes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Exterior"/>
+        <definition>a set of Mustang stripes wrapped around the body lines of the car</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#ThirdParty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#ThirdParty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Manufacturer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#White_MMD_V-Series_Stripes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#White_MMD_V-Series_Stripes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Stripes"/>
+        <definition>MMD V Series Stripes
+Tapered to Accentuate the Lines of the Car
+Gloss White Appearance
+4 Mil Wrapping Cast PVC Vinyl Material
+Built-In Protective Clear Coat Layer for Up to 8 Years Outdoor Durability
+Air Release Technology for a Smooth Wrinkle-Free Surface
+Pre-Cut for Ease of Installation
+Fits All 2015-2019 Mustangs</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Corbeau_Trailcat_Diamond_Pattern_Seat_w/_Black_Stitching_-_Black_Vinyl_-_Pair -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Corbeau_Trailcat_Diamond_Pattern_Seat_w/_Black_Stitching_-_Black_Vinyl_-_Pair">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Seats"/>
+        <definition>Sporty Black Diamond Pattern
+Low Thigh Bolsters for Ease of Getting In/Out
+Supportive Kidney Bolsters
+Lightweight Tubular Frame with Injection Molded Foam Padding
+Premium Black Vinyl Material with Black Stitching
+Fully Recline-able for Maximum Comfort
+Harness Pass-Through Opening
+Standard Size - for Up to a 38-40&quot; Waist
+Seat Brackets Required for Installation - Sold Separately
+Sold as a Pair 
+One-Year Warranty
+Fits All 1979-2019 Mustang Models</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Flowmaster_Outlaw_Axle-Back_Exhaust_w/_Black_Tips -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Flowmaster_Outlaw_Axle-Back_Exhaust_w/_Black_Tips">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#AxlebackExhaust"/>
+        <definition>Powerful Outlaw Series Axle-Back Exhaust
+Offers a Raspy, Muscular Sound
+Two Flowmaster Outlaw Mufflers
+3.50-Inch Mandrel-Bent Tubing
+Durable Stainless Steel Build
+Two Hardcore Black Tips
+Moderate Skills Required for Installation
+Limited Lifetime Warranty
+Not Compatible with Active Exhaust
+Fits All 2015-2019 Ford Mustang EcoBoosts Without Active Exhausts</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Ford_Performance_by_Borla_Touring_Axle-Back_Exhaust_w/_Chrome_Tip -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Ford_Performance_by_Borla_Touring_Axle-Back_Exhaust_w/_Chrome_Tip">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#AxlebackExhaust"/>
+        <definition>Provides an Aggressive Sporty Tune
+Engineered to Increase Horsepower and Torque
+Utilizes a Single Inlet/ Single Outlet Muffler Design
+Manufactured From Mandrel-Bent Stainless Steel
+Comes With 4-Inch Stainless Steel Tips
+Cutting Required for Installation
+Fits All 2018-2019 Ford Mustang EcoBoost Models</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Front_&amp;_Rear_Floor_Mats_w/_FOOSE_Logo_-_Black -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Front_&amp;_Rear_Floor_Mats_w/_FOOSE_Logo_-_Black">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#FloorMats"/>
+        <definition>Impressive Custom Styling
+Embroidered FOOSE Logo
+Black Cut Pile Carpet
+OEM Quality Materials
+Sold as a Set of Four
+Fits All 2015-2019 Mustangs</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Lloyd_Front_&amp;_Rear_Floor_Mats_-_Black -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Lloyd_Front_&amp;_Rear_Floor_Mats_-_Black">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#FloorMats"/>
+        <definition>Superior Appearance
+Black Front&amp; Rear Floor Mats
+Polypropylene Yarn Construction
+Multi-Layer Traction Backing
+Officially Licensed by Ford
+Sold as a Set of 4
+Fits All 2015-2019 Mustangs</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Lloyd_Front_&amp;_Rear_Floor_Mats_w/_Shelby_GT350_Logo_-_Black -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Lloyd_Front_&amp;_Rear_Floor_Mats_w/_Shelby_GT350_Logo_-_Black">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#FloorMats"/>
+        <definition>All-Around Floor Protection
+Embroidered with a Silver Shelby GT350 Emblem-Style Logo
+40-Ounce Per Yard Polypropylene Construction
+Black Plush Mat Finish
+Resists Dirt, Stains, and Moisture
+Features a Multi-Layer Backing
+Woven Binding Matches the Mat Color
+Comes with (2) Front Mats and (2) Rear Mats
+Manufactured According to Ford Requirements
+Official Shelby-Licensed
+Proudly American-Made
+Covered by a 10-Year Warranty
+Fit All 2015 to 2019 Ford Mustang Models</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#Lloyd_Front_&amp;_Rear_Floor_Mats_w/_Shelby_GT_Logo_-_Black -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Lloyd_Front_&amp;_Rear_Floor_Mats_w/_Shelby_GT_Logo_-_Black">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#FloorMats"/>
+        <definition>Superior Appearance
+Black Front and Rear Floor Mats
+Embroidered Shelby GT Logo
+Polypropylene Yarn Construction
+Multi-Layer Traction Backing
+Officially Licensed by Ford
+Sold as a Set of Four
+Fits All 2015-2019 Mustangs</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#MBRP_Installer_Series_Cat-Back_Exhaust_w/_Y-Pipe_-_Street_Version -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#MBRP_Installer_Series_Cat-Back_Exhaust_w/_Y-Pipe_-_Street_Version">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#CatbackExhaust"/>
+        <definition>Classic Muscle Car Sound
+Improves Exhaust Flow for More Power
+Street Mufflers and Y-Pipe Included
+Aluminized Steel Construction
+3&quot; Mandrel-Bent Tubing
+4.5&quot; Slant Cut Tips
+Direct Bolt-On Installation
+Not Compatible with Active Exhaust
+Fits 2015-2019 EcoBoost Fastback Mustangs</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#MBRP_XP_Series_Cat-Back_Exhaust_w/_Y-Pipe_-_Race_Version -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#MBRP_XP_Series_Cat-Back_Exhaust_w/_Y-Pipe_-_Race_Version">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#CatbackExhaust"/>
+        <definition>Aggressive Exhaust Note
+Improves Exhaust Flow for More Power
+Race Series Mufflers and Y-Pipe Included
+409 Stainless Steel Construction
+3&quot; Mandrel-Bent Tubing
+4.5&quot; Polished Slant Cut Tips
+Direct Bolt-On Installation
+Not Compatible with Active Exhaust
+Fits 2015-2019 EcoBoost Fastback Mustangs</definition>
+        <rdfs:seeAlso>https://www.americanmuscle.com/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#American_Muscle_Graphics_Matte_Black_Lemans_Stripes_-_8_in."/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#American_Muscle_Graphics_Silver_Lemans_Stripes_-_8_in."/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#American_Muscle_Graphics_White_Lemans_Stripes_-_8_in."/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Black_MMD_V-Series_Stripes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#White_MMD_V-Series_Stripes"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Borla_ATAK_Axle-Back_Exhaust"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Borla_Stinger_S-Type_Axle-Back_Exhaust"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Flowmaster_American_Thunder_Axle-Back_Exhaust"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Flowmaster_FlowFX_Axle-Back_Exhaust"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Flowmaster_Outlaw_Axle-Back_Exhaust"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Flowmaster_Outlaw_Axle-Back_Exhaust_w/_Black_Tips"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Ford_Performance_by_Borla_Touring_Axle-Back_Exhaust_w/_Chrome_Tip"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Borla_ATAK_Cat-Back_Exhaust"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Borla_Touring_Cat-Back_Exhaust"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Magnaflow_Street_Cat-Back_Exhaust"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#MBRP_Installer_Series_Cat-Back_Exhaust_w/_Y-Pipe_-_Street_Version"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#MBRP_XP_Series_Cat-Back_Exhaust_w/_Y-Pipe_-_Race_Version"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Corbeau_Sportline_RRS_Reclining_Seat_-_Black_Leather_-_Pair"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Ford_Performance_Recaro_Seats"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Corbeau_Trailcat_Diamond_Pattern_Seat_w/_Black_Stitching_-_Black_Vinyl_-_Pair"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Ford_GT350_Alcantara_Steering_Wheel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Ford_Performance_Off-Road_Steering_Wheel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#MOMO_USA_Race_Steering_Wheel"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Front_&amp;_Rear_Floor_Mats_w/_FOOSE_Logo_-_Black"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Lloyd_Front_&amp;_Rear_Floor_Mats_-_Black"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Lloyd_Front_&amp;_Rear_Floor_Mats_w/_Shelby_GT350_Logo_-_Black"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Lloyd_Front_&amp;_Rear_Floor_Mats_w/_Shelby_GT_Logo_-_Black"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
