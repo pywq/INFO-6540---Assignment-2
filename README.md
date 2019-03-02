@@ -23,4 +23,4 @@ Find version 5.2.0 and click on ‘downloads’ (this is the latest stable versi
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
