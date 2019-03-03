@@ -2,13 +2,20 @@
 <rdf:RDF xmlns="http://www.semanticweb.org/pywq/ontologies/Mustang#"
      xml:base="http://www.semanticweb.org/pywq/ontologies/Mustang"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:determs="http://www.semanticweb.org/pywq/ontologies/Mustang#determs:">
+     xmlns:determs="http://www.semanticweb.org/pywq/ontologies/Mustang#determs:"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang">
+        <terms:contributor>Wenqian Puyang</terms:contributor>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0.2</owl:versionInfo>
+        <owl:priorVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">v1.0.1 added explanation to object properties</owl:priorVersion>
         <determs:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Creative Commons Attribution 3.0 (CC BY 3.0)</determs:license>
+        <dc:description>An ontology about modification parts of Mustang --- the muscle car manufactured by Ford.</dc:description>
     </owl:Ontology>
     
 
@@ -24,6 +31,24 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/oldversion -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/oldversion"/>
+    
+
+
     <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#definition -->
 
     <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#definition"/>
@@ -33,6 +58,12 @@
     <!-- http://www.semanticweb.org/pywq/ontologies/Mustang#determs:license -->
 
     <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#determs:license"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
     
 
 
@@ -54,6 +85,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Exterior"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Stripes"/>
+        <definition>A transitive relationship. Exterior has category &apos;Stripes&apos;, in reverse, &apos;Stripes&apos; is a category of exterior parts.</definition>
     </owl:ObjectProperty>
     
 
@@ -64,6 +96,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Stripes"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Exterior"/>
+        <definition>A transitive relationship. &apos;Stripes&apos; is a category of &apos;Exterior&apos;, in reverse, &apos;Exterior&apos; has category &apos;Stripes&apos;.</definition>
     </owl:ObjectProperty>
     
 
@@ -74,7 +107,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Ford"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#ThirdParty"/>
-        <definition>Ford is the competitor of third party manufacturers, oppositely,third party manufacturers are the competitors of Ford. They are of symmetric relations.</definition>
+        <definition>Ford is the competitor of third party manufacturers, in reverse, third party manufacturers are the competitors of Ford. They are of symmetric relations.</definition>
     </owl:ObjectProperty>
     
 
@@ -85,7 +118,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Exhaust"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Mustang_Submodel"/>
-        <definition>Specific exhaust is for specific submodel of Mustang, however, oppositely, the relation dos not make sense. So, they are of functional relations (one-way relationship).</definition>
+        <definition>Specific exhaust is for specific submodel of Mustang, however, in reverse, the relation dos not make sense. So, they are of functional relations (one-way relationship).</definition>
     </owl:ObjectProperty>
     
 
@@ -96,7 +129,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Ford_Performance_Off-Road_Steering_Wheel"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Ford"/>
-        <definition>This steering wheel is produced by Ford, however, oppositely, &apos;Ford&apos; cannot be produced by this steering wheel. So, they are of functional relations (one-way relationship).</definition>
+        <definition>This steering wheel is produced by Ford, however, in reverse, &apos;Ford&apos; cannot be produced by this steering wheel. So, they are of functional relations (one-way relationship).</definition>
     </owl:ObjectProperty>
     
 
@@ -517,6 +550,7 @@ Fits 2015-2019 EcoBoost Mustangs</definition>
     <owl:Class rdf:about="http://www.semanticweb.org/pywq/ontologies/Mustang#Parts">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pywq/ontologies/Mustang#Mustang"/>
         <rdfs:isDefinedBy>used to do personal modification of a car or car tuning</rdfs:isDefinedBy>
+        <skos:altLabel>Tuning/Modification parts</skos:altLabel>
     </owl:Class>
     
 
